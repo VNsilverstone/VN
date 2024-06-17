@@ -14,15 +14,20 @@ if __name__ == '__main__':
     window.bgcolor('white')
     
     # Make a new turtle
-    
+    Turtle = turtle.Turtle()
     # This code sets our shape to a turtle
     
     # Set your turtle's speed (0=fastest, 1=slowest, 10=faster)
-    
+    Turtle.speed(10)
     # Set your turtle's color using .color('green')
-    
+    Turtle.color('green')
     # Use a loop to repeat a the code below 50 times
-        
+    for i in range(50):
+        Turtle.color(get_random_color())
+        Turtle.forward(5*i)
+        Turtle.right(360/7)
+        Turtle.width(i)
+
         # Set the turtle color to a random color
 
         # Move the turtle (5*i) pixels. 'i' is the loop variable
